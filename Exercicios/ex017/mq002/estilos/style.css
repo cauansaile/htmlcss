@@ -2,15 +2,23 @@
 
 /* Configurações gerais */
 
-html, body{
+*{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: #233eff;
+    height: 100vh;
+    width: 100vw;
 }
 
 h1{
     color: white;
     text-shadow: 2px 2px 0px rgb(23, 23, 194);
+    padding: 10px;
 }
