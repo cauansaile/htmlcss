@@ -14,14 +14,30 @@ body{
 header{
     background: #949494;
     width: 100vw;
-    height: 95px;
+    
     margin-bottom: 20px;
 }
 
 header h1{
     text-align: center;
     font-size: 2em;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+
+#menu{
+    display: block;
+    background: rgb(43, 43, 43);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menu:hover{
+    background: #fff;
+    color: #474747;
 }
 
 header a{
@@ -29,14 +45,15 @@ header a{
     color: #fff;
     text-decoration: none;
     padding: 10px;
-    display: inline-block;
+    display: block;
     margin-bottom: 0px;
+    text-align: center;
 
     
 
 }
 header li{
-    display: inline-block;
+    display: block;
 }
 
 header a:hover{
@@ -48,11 +65,11 @@ main{
     
     padding-top: 15px;
     background: white;
-    width: 00px;
+    width: 400px;
     border-radius: 20px;
     display: block;
     margin: auto;
-    height: 700px;
+    height: 100vh;
     padding: 15px;
     
 }

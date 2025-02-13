@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsividade</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css" media="all" and (max-width: 767px)>
-    <link rel="stylesheet" href="estilos/tablet.css" media="screen" and (min-width: 768px) and (max-width: 992px)>
-    <link rel="stylesheet" href="estilos/desktop.css" media="screen" and (min-width: 992px) and (max-width: 1200px)>
-    <link rel="stylesheet" href="estilos/grandes.css" media="screen" and (min-width: 1200px)>
+    <link rel="stylesheet" href="estilos/outrosdevices.css">
+ 
 </head>
-<body>
-    <header>
+<body onresize="mudarTela()">
+    <header >
         <h1>Noticias</h1>
-        <menu>
+        <span class="material-icons md-24" id="menu" onclick="clickMenu()" >menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -36,5 +37,22 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, earum. Dicta aliquid recusandae et necessitatibus, culpa aperiam pariatur voluptatibus odio iste hic dolorum blanditiis quod vitae aut quam quae adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium illo culpa officia repellat quaerat hic, eius atque temporibus voluptate, maiores delectus ea iure est facere repudiandae iste nam perferendis necessitatibus.</p>
         </article>
     </main>
+    <script>
+
+        function mudarTela(){
+            if (window.innerWidth >= 768){
+                itens.style.display = "block";
+            }else{
+                itens.style.display = "none";
+            }
+        }
+        function clickMenu(){
+            if(itens.style.display == "block"){
+                itens.style.display = "none";
+                }else{
+                    itens.style.display = "block"
+                }
+        }
+    </script>
 </body>
 </html>
