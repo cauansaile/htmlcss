@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*
+cor: #3f3efe
+*/
+
+@media screen and (max-width: 664px) {
+
+    header{
+        height:52vh ;
+    }
+    menu > a{
+        display: block;
+        width: 94vw;
+        margin-top: 5px;
+        
+    }
+
+    
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu flexbox</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+</head>
+<body>
+    <header>
+        <h1>Alô Juca</h1>
+        <span class="material-icons md-24" id="menu" onclick="clickMenu()" >menu</span>
+            <menu id="iditens">
+                <a href="#" class="itens">Esportes</a>
+                <a href="#" class="itens">Ao vivo</a>
+                <a href="#" class="itens">Economia</a>
+                <a href="#" class="itens">Famosos</a>
+                <a href="#" class="itens">Tecnologia</a>
+                <a href="#" class="itens">Segurança</a>
+            </menu>
+        
+    </header>
+    <main>
+        <section>
+            <article>
+                <h1>Motorista da Limpurb perde controle de caminhão e colide contra sete carros na Av. Vasco da Gama</h1>
+                <p>
+
+                    Um caminhão da Limpurb colidiu contra sete carros na manhã desta segunda-feira (24) na Avenida Vasco da Gama, em Salvador. Segundo fontes do site Alô Juca, o condutor teria perdido o controle do veículo ao tentar desviar de um carro, o que acabou causando o acidente. <br> <br> <br>
+                    
+                    Equipes da Transalvador estão no local para organizar o trânsito, que está lento na região. Felizmente, ninguém ficou ferido na ocorrência. <br> <br> <br>
+                    
+                    Em nota, a Limpurb informou que lamenta o ocorrido, mas que ninguém ficou ferido no acidente. Todos os prejuízos serão pagos pela empresa terceirizada responsável.</p>
+            </article>
+        </section>
+    </main>
+    <script>
+
+        function mudarTela(){
+            if (window.innerWidth >= 664){
+                iditens.style.display = "block";
+            }else{
+                iditens.style.display = "none";
+            }
+        }
+        function clickMenu(){
+            if(iditens.style.display == "block"){
+                iditens.style.display = "none";
+                }else{
+                    iditens.style.display = "block"
+                }
+        }
+    </script>
+</body>
+</html>
