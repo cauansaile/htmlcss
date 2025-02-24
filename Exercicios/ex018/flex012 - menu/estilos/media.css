@@ -6,8 +6,10 @@ cor: #3f3efe
 
 @media screen and (max-width: 664px) {
 
+
+
     header{
-        height:52vh ;
+        height: auto ;
     }
     menu > a{
         display: block;
@@ -15,6 +17,14 @@ cor: #3f3efe
         margin-top: 5px;
         
     }
+    header > #menu{
+        display: block;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+
+    }
+    
 
     
 }

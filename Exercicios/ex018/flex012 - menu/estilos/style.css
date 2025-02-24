@@ -16,22 +16,19 @@ header{
     display: flex;
     flex-flow: row wrap;
     background-color: #3f3efe;
-    height: 1vh;
     color: white;
     justify-content: space-between;
     align-items: center;
-    align-content: flex-start;
 
+}
+
+menu{
+    display: flex;
+    flex-flow: row wrap;
 }
 #menu{
-    display: block;
-    background: rgb(43, 43, 43);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
+    display: none;
 }
-
 .itens{
     align-self: flex-end;
 }
@@ -40,11 +37,11 @@ menu > a{
     color: white;
     background: gray;
     text-decoration: none;
-    border: 1px solid black;
     padding: 10px;
     margin-right: 5px;
     border-radius: 5px;
     margin-left: 5px;
+    margin-bottom: 5px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.316);
     
 
